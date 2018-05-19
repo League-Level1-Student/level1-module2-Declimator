@@ -35,6 +35,7 @@ class Microwave {
 	}
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public class Popcorn {
 
 	private int kernels = 20;
@@ -65,6 +66,10 @@ public class Popcorn {
 	}
 
 	public static void main(String[] args) {
-
+		Popcorn flavor = new Popcorn("buttery");
+		Microwave microwave = new Microwave();
+		microwave.putInMicrowave(flavor);
+		microwave.setTime(2);
+		microwave.startMicrowave();
 	}
 }
