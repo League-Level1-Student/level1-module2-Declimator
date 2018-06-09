@@ -6,17 +6,20 @@ public class Vault {
 	boolean isRight;
 	int code;
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
+	
+}
+	Vault() {
+		this.code = new Random().nextInt(1000001);
+
 
 	}
 
-	public Vault(int code) {
-		this.code = code;
-	}
-
-	public void TryCode(int input) {
+	public boolean TryCode(int input) {
 		if (input == code) {
-
+			return true;
+		} else {
+			return false;
 		}
 	}
 
